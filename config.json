@@ -1,0 +1,108 @@
+{
+  "data_path": "data/",
+  "item_source_csv": "sandbox_items.csv",
+  "item_pattern_file": "",
+  "outfiles": [
+    {
+      "manage_descriptions": true,
+      "label_description_language_list": [
+        "en",
+      ],
+      "output_file_name": "artworks.csv",
+      "prop_list": [
+        {
+          "pid": "P31",
+          "variable": "instance_of",
+          "value_type": "item",
+          "qual": [],
+          "ref": []
+        },
+        {
+          "pid": "P217",
+          "variable": "inventory_number",
+          "value_type": "string",
+          "qual": [
+            {
+              "pid": "P195",
+              "variable": "collection",
+              "value_type": "item"
+            }
+          ],
+          "ref": [
+            {
+              "pid": "P854",
+              "variable": "referenceUrl",
+              "value_type": "uri"
+            },
+            {
+              "pid": "P813",
+              "variable": "retrieved",
+              "value_type": "date"
+            }
+          ]
+        },
+        {
+          "pid": "P1476",
+          "variable": "title",
+          "value_type": "monolingualtext",
+          "language": "en",
+          "qual": [],
+          "ref": [
+            {
+              "pid": "P248",
+              "variable": "statedIn",
+              "value_type": "item"
+            }
+          ]
+        },
+        {
+          "pid": "P2048",
+          "variable": "height",
+          "value_type": "quantity",
+          "qual": [],
+          "ref": []
+        },
+        {
+          "pid": "P571",
+          "variable": "inception",
+          "value_type": "date",
+          "qual": [
+            {
+              "pid": "P1319",
+              "variable": "earliest_date",
+              "value_type": "date"
+            },
+            {
+              "pid": "P1326",
+              "variable": "latest_date",
+              "value_type": "date"
+            }
+          ],
+          "ref": [
+            {
+              "pid": "P248",
+              "variable": "statedIn",
+              "value_type": "item"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "manage_descriptions": false,
+      "label_description_language_list": [
+        "en"
+      ],
+      "output_file_name": "works_depicts.csv",
+      "prop_list": [
+        {
+          "pid": "P180",
+          "variable": "depicts",
+          "value_type": "item",
+          "qual": [],
+          "ref": []
+        }
+      ]
+    }
+  ]
+}
